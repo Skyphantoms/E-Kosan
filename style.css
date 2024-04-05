@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #004e64;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+
+.sidebar ul li a:hover {
+    background-color:#00a5cf;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color:whitesmoke;
+}
+
+.main-content h1 {
+    margin-top: 0;
+}
+
+.logout-section {
+    position: relative;
+    bottom: -450px;
+    width: calc(100% - 40px); 
+}
+
+.logout-button {
+    background-color: rgb(224, 61, 61); 
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-radius: 5px; 
+}
+
+.logout-button:hover {
+    background-color: #c53727; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid;
+    border-width: 1px; 
+    border-color: #25a183; 
+    padding: 8px;
+}
+
+
+th {
+    background-color: #7ae582;
+    text-align: center;
+}
+
+tr{
+    background-color: #f9f9f9;
+    text-align: left; 
+}
+
+tr:hover {
+    background-color: #ddd; 
+}
+
+.btn-container {
+    display: flex;
+}
+
+.dashboard-content{
+    background-color: #25a183;
+    padding: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.button-group {
+    display: flex;
+    margin-bottom: -250px;
+    margin-left:-300px;;
+    text-align: center;
+    gap: 0px; 
+}
+
+.btn {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+.btn-create {
+    background-color:rgb(51, 217, 51); 
+    color: white; 
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+.btn-create:hover {
+    opacity: 0.8;
+}
+
+.btn-update {
+    background-color:rgb(61, 61, 244); 
+    color: white; 
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    text-decoration: none;
+}
+
+.btn-update:hover {
+    opacity: 0.8; 
+}
+
+.btn-delete {
+    background-color:rgb(224, 61, 61); 
+    color: white; 
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    opacity: 0.8; 
+}
+
+.deskripsi-table{
+    position: absolute;
+    margin-bottom:200px;
+    margin-right: 810px;
+    text-align: center;
+    gap: 0px; 
+}
+
+
