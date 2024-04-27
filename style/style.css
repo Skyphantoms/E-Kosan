@@ -1,0 +1,235 @@
+:root {
+    --birumuda: #96cdee;
+    --putihabu: #ffe0bc;
+    --putih: #ffffff;
+    --biru: #4887B7;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.dashboard {
+    position: relative;
+    display: flex;
+    width: 100vw;
+}
+
+.sidebar {
+    background-color: var(--biru);
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    padding: 20px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 40px 0px 10px 0px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 10px;
+}
+
+.sidebar i {
+    margin-right: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #00a5cf;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.main-content h1 {
+    margin-top: 0;
+}
+
+.logout-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logout-button {
+    background-color: rgb(237, 71, 71);
+    width: 70%;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #c53727;
+}
+.button3:hover{
+    background-color:#099839;
+}
+.button2:hover{
+    background-color:#c53727;
+}
+.button:hover{
+    background-color:#e1c630 ;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.btn-container {
+    display: flex;
+}
+
+.dashboard-content {
+    background-color: var(--putihabu);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.details {
+    width: calc(100vw - 330px);
+    padding: 20px;
+}
+
+.details .border-details {
+    margin-top: 40px;
+    position: relative;
+    display: grid;
+    min-height: 50px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    border: 1px solid black
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 1px solid gray;
+}
+
+.details table thead td {
+    font-weight: 600;
+    border: 1px solid gray;
+}
+
+.details .border-details table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .border-details table tr:last-child {
+    border-bottom: none;
+}
+
+.details .border-details table tbody tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.details .border-details table tr td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.details .border-details table tr td:last-child {
+    text-align: end;
+}
+
+.details .border-details table tr td:nth-child(2) {
+    text-align: end;
+}
+
+.details .border-details table tr td:nth-child(3) {
+    text-align: center;
+}
+
+.button,.button2,.button3{
+    cursor: pointer;
+}
+.button {
+    background: #f38c06;
+    color: var(--black1);
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-weight: 500;
+    color: white;
+}
+
+.button2 {
+    background: rgb(237, 71, 71);
+    color: var(--black1);
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    font-weight: 500;
+    color: white;
+}
+
+.button3 {
+    background: #00ce45;
+    color: var(--black1);
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    font-weight: 500;
+    border: none;
+    margin-right: 10px;
+    color: white;
+}
+
+.top-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr{
+    width: 100%;
+    border: .2px solid black;
+}
