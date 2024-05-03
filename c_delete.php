@@ -2,9 +2,9 @@
 // delete.php
 include 'koneksi.php'; // Include script koneksi database
 
-$id = $_GET['id']; // Dapatkan id dari URL
+$id = $_POST['id']; // Dapatkan id dari URL
 
-if ($id) {
+if (isset($id)) {
     $query = "DELETE FROM db_ekosan WHERE id = ?";
     $stmt = $conn->prepare($query);
     $stmt->bind_param("i", $id); // 'i' berarti tipe data integer

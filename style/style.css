@@ -17,11 +17,18 @@ body {
     width: 100vw;
 }
 
+.gambar img {
+    width: 200px;
+}
+
 .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: var(--biru);
     color: #fff;
     width: 250px;
-    height: 100vh;
+    height: calc(100vh - 60px);
     padding: 20px 20px 40px 20px;
     display: flex;
     flex-direction: column;
@@ -125,6 +132,7 @@ table {
 
 .details {
     width: calc(100vw - 330px);
+    margin-left: 290px;
     padding: 20px;
 }
 
@@ -232,4 +240,13 @@ table {
 hr{
     width: 100%;
     border: .2px solid black;
+}
+
+.confirm-delete{
+    width: 50%;
+    background-color: green;
+}
+
+form img{
+    width: 400px;
 }

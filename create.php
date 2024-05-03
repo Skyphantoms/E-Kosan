@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tambah Data Penyewa Kos</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/createupdate.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -15,7 +15,7 @@
                 <h2><i class='bx bxs-home-smile'></i>E-Kosan</h2>
                 <ul>
                     <li><a href="index.php"><i class='bx bxs-dashboard'></i> Dashboard </a></li>
-                    <li><a href="#"><i class='bx bxs-home'></i> Detail Kos </a></li>
+                    <li><a href="detailkos.php"><i class='bx bxs-home'></i> Detail Kos </a></li>
                     <li><a href="#"><i class='bx bxs-spreadsheet'></i> Form Tambah Kos </a></li>
                 </ul>
             </div>
