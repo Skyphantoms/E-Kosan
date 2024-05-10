@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+
+  background-color: white;
+  width: calc(100% - 330px);
+  margin-left: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.container h1 {
+  margin-top: 20px;
+  color:black;
+}
+
+.form {
+  font-size: 16px;
+  font-weight: 600;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px;
+}
+
+.form input {
+  padding: 15px 10px;
+  background-color: whitesmoke;
+  border: 2px solid #4887B7;
+  border-radius: 5px;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form .create {
+    margin-top: 50px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #00ce45;
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    border: 0px;
+}
+.create:hover{
+  background-color:#099839;
+}
+.form .update {
+    margin-top: 50px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #f38c06;
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.update:hover{
+  background-color:#e1c630;
+}
+hr{
+  width: 100%;
+  border: 5px solid #4887B7;
+  margin-bottom: 30px;
+  border-radius: 100px;
+}
+
+.update,.create{
+  cursor: pointer;
+}

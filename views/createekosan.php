@@ -26,7 +26,7 @@
 </div>
     <div class="container">
     <h1>Tambah Data Penyewa Kos</h1>
-      <form class="form" action="c_create.php" method="post">
+      <form class="form" action="createekosan" method="post">
         <hr>
           <label for="namapenyewa">Nama Penyewa: </label>
           <input type="text" name="namapenyewa" id="namapenyewa">

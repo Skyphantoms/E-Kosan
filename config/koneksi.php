@@ -1,4 +1,5 @@
 <?php
+require_once 'env.php';
 
 $url = $_ENV['BASEURL'];
 $host = $_ENV['DB_HOST'];
@@ -10,8 +11,7 @@ $database = $_ENV['DB_NAME'];
 // $userName = "root";
 // $password = "";
 // $dbname = "ekosan";
-
-$conn = mysqli_connect($serverName, $userName, $password, $dbname);
+$conn = new mysqli($host, $username, $password, $database);
 
 // function read($query) {
 //     global $conn;

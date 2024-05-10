@@ -26,7 +26,7 @@
 </div>
 <div class="container">
       <h1>Update Data Penyewa Kos</h1>
-        <form class="form" action="c_update.php?id=<?= $_GET['id'] ?>" method="post">
+        <form class="form" action="updateekosan/<?= $data[0]['id'] ?>" method="post">
             <hr>
             <label for="namapenyewa">Nama Penyewa: </label>
             <input type="text" name="namapenyewa" id="namapenyewa" value="<?= $data[0]['nama']?>">

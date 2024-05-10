@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - E-Kosan</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/views/style/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -30,7 +30,7 @@
             <div class="border-details">
                 <div class="top-table">
                     <h2>Data Penyewa E-Kosan</h2>
-                    <a href="/ekosancreate"><button type="button" class="button3">Tambah</button></a>
+                    <a href="ekosancreate"><button type="button" class="button3">Tambah</button></a>
                 </div>
                 <hr>
                 <table>
@@ -54,8 +54,8 @@
                             <td><?=$data[$x]['tanggal_pembayaran']?></td>
                             <td><?=$data[$x]['periode_pembayaran']?></td>
                             <td>
-                            <a href="/E-Kosan/ekosanupdate/<?= $data[$x]['id'] ?>"><button type="submit" class="button">Edit</button></a>
-                            <a href="/E-Kosan/deleteekosan/<?= $data[$x]['id'] ?>"><button type="submit" class="button2">Hapus</button></a>
+                            <a href="ekosanupdate/<?= $data[$x]['id'] ?>"><button type="submit" class="button">Edit</button></a>
+                            <a href="deleteekosan/<?= $data[$x]['id'] ?>"><button type="submit" class="button2">Hapus</button></a>
                             </td>
                         </tr>
                     </tbody>
