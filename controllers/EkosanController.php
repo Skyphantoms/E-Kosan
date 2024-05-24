@@ -4,34 +4,41 @@ require_once "function/function.php";
 
 class EkosanController{
   
+  public function __construct()
+  {
+    global $url;
+    session_start();
+    if(!isset($_SESSION['is_auth']))
+    {
+      echo "<script>window.location.href = '".$url."login'</script>";
+      exit();
+    }
+  }
+
   public function index(){
     $data = EkosanModel::read();
     loadView('ekosan', $data);
   }
 
   public function formcreate(){
-    loadView('ekosancreate');
+    loadView('createekosan');
   }
 
   public function create(){
     global $url;
-    $data = EkosanModel::create($_POST["nama"],$_POST["kamar"],$_POST["no_hp"],$_POST["tanggal_pembayaran"],$_POST["periode_pembayaran"]);
+    $data = EkosanModel::create($_POST["nama"],$_POST["kamar"],$_POST["no_hp"],$_POST["bayar"],$_POST["periode"]);
     header("Location:".$url."/ekosan");
   }
 
-  public function detail($id){
-    $data = EkosanModel::detail($id);
-    return $data;
-  }
  
   public function formupdate($id){
     $data = EkosanModel::detail($id);
-    loadView('ekosanupdate', $data);
+    loadView('updateekosan', $data);
   }
 
   public function update($id){
     global $url;
-    $data = EkosanModel::update($id,$_POST["nama"],$_POST["kamar"],$_POST["no_hp"],$_POST["tanggal_pembayaran"],$_POST["periode_pembayaran"]);
+    $data = EkosanModel::update($id,$_POST["nama"],$_POST["kamar"],$_POST["no_hp"],$_POST["bayar"],$_POST["periode"]);
     header("Location:".$url."/ekosan");
   }
 

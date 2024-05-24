@@ -5,25 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - E-Kosan</title>
-    <link rel="stylesheet" href="/views/style/style.css">
+    <link rel="stylesheet" href="views/style/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <div class="dashboard">
-        <div class="sidebar">
-            <div>
-                <h2><i class='bx bxs-home-smile'></i>E-Kosan</h2>
-                <ul>
-                    <li><a href="index.php"><i class='bx bxs-dashboard'></i> Dashboard </a></li>
-                    <li><a href="detailkos.php"><i class='bx bxs-home'></i> Detail Kos </a></li>
-                    <li><a href="#"><i class='bx bxs-spreadsheet'></i> Form Tambah Kos </a></li>
-                </ul>
-            </div>
-            <div class="logout-section">
-                <a href="login.php" class="logout-button">Logout</a>
-            </div>
-        </div>
+        <?php include "views/components/sidebar.php"?>
         <div class="details">
             <h1><i class='bx bxs-dashboard'></i> Dashboard</h1>
             <p>Selamat Datang Admin <strong>E-Kosan</strong></p>
@@ -44,8 +32,9 @@
                             <td>Periode Pembayaran</td>
                         </tr>
                     </thead>
-                    <?php for ($x=0; $x < count($data); $x++) ?>
+                    
                     <tbody>
+                        <?php for ($x=0; $x < count($data); $x++) {?>
                         <tr>
                             <td><?=$x+1?></td>
                             <td><?=$data[$x]['nama']?></td>
@@ -55,9 +44,10 @@
                             <td><?=$data[$x]['periode_pembayaran']?></td>
                             <td>
                             <a href="ekosanupdate/<?= $data[$x]['id'] ?>"><button type="submit" class="button">Edit</button></a>
-                            <a href="deleteekosan/<?= $data[$x]['id'] ?>"><button type="submit" class="button2">Hapus</button></a>
+                            <a href="deleteekosan/<?= $data[$x]['id'] ?>" onclick="return confirm('Anda yakin menghapus item ini?');"><button type="submit" class="button2">Hapus</button></a>
                             </td>
                         </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>

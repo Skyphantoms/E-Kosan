@@ -10,7 +10,7 @@ $httpMethod = $_SERVER['REQUEST_METHOD'];
 $route = $_SERVER['REQUEST_URI'];
 
 // Basis URL
-$baseUrl = '/ekosan';
+$baseUrl = '/E-Kosan-github';
 
 // Variabel untuk menyimpan parameter rute
 $params = [];

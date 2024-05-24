@@ -8,7 +8,7 @@ class EkosanModel{
 
     static function read(){
         global $conn;
-        $query= "SELECT * db_ekosan";
+        $query= "SELECT * from db_ekosan";
         $result = mysqli_query($conn, $query);
         $data = array();
         if($result->num_rows > 0){
@@ -32,8 +32,8 @@ class EkosanModel{
 
     static function update($id,$nama, $kamar, $nomor_hp, $tanggal_pembayaran, $periode_pembayaran){
         global $conn;
-        $stmt = $conn->prepare("update db_ekosan set nama?, kamar=?, nomor_hp=?, tanggal_pembayaran=?,periode_pembayaran WHERE id=".$id);
-        $stmt->bind_param("siissi", $nama, $kamar, $nomor_hp, $tanggal_pembayaran, $periode_pembayaran, $id);
+        $stmt = $conn->prepare("update db_ekosan set nama=?, kamar=?, nomor_hp=?, tanggal_pembayaran=?, periode_pembayaran=? WHERE id=".$id);
+        $stmt->bind_param("siiss", $nama, $kamar, $nomor_hp, $tanggal_pembayaran, $periode_pembayaran);
         $stmt->execute();
         $result = $stmt->affected_rows > 0 ? true : false;
         $stmt->close();
@@ -42,9 +42,8 @@ class EkosanModel{
 
     static function delete($id){
         global $conn;
-        $query = "delete from portofolio where id=?";
+        $query = "delete from db_ekosan where id=".$id;
         $stmt = $conn->prepare($query);
-        $stmt->bind_param('i', $id);
         $stmt->execute();
         $result = $stmt->affected_rows > 0 ? true : false;
         $stmt->close();

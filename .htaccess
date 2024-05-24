@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteBase /Ekosan
+RewriteBase /E-Kosan-github
 RewriteRule ^index\\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /Ekosan/index.php [L]
+RewriteRule . /E-Kosan-github/index.php [L]

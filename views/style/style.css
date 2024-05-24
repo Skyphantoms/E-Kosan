@@ -5,6 +5,10 @@
     --biru: #4887B7;
 }
 
+a{
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
