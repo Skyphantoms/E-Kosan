@@ -36,7 +36,7 @@ class DetailController{
             $file = md5($_FILES['gambar_kos']['name']) . time() . $extension;
             $result = move_uploaded_file($_FILES['gambar_kos']['tmp_name'], 'uploads/' . $file);
             if (!$result) {
-                echo ("<script>alert('Gagal upload gambar');window.location.href = '/E-Kosan-github/detailupdate/" . $id . "'</script>");
+                echo ("<script>alert('Gagal upload gambar');window.location.href = '/E-Kosan-github/detailcreate/" . "'</script>");
                 exit();
             }
             $data = DetailModel::create($_POST["namakos"], $file, $_POST["alamat"]);
